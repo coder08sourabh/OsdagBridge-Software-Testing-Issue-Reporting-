@@ -1,0 +1,33 @@
+================================================================================
+OSDAGBRIDGE VIDEO DEMONSTRATION RECORDING STATUS
+================================================================================
+
+PROJECT TITLE:             OsdagBridge Software Testing & Issue Reporting
+PROJECT NAME:              OsdagBridge
+DEVELOPED AND MAINTAINED BY: Sourabh Godiyal
+PROJECT AUTHOR:            Sourabh Godiyal
+DEVELOPER:                 Sourabh Godiyal
+PROJECT MAINTAINER:        Sourabh Godiyal
+PROJECT TYPE:              Individual Project
+PROJECT SUBMISSION:        Individual
+VIDEO TITLE:               OsdagBridge Short-Span Steel Plate Girder Testing & Verification Demo
+TARGET PLATFORM:           YouTube (Unlisted) / Google Drive (Direct Review Link)
+ACTUAL VIDEO URL:          PENDING_RECORDING
+SHARING PERMISSION:        Public / Anyone with Link (View Only)
+UPLOAD STATUS:             NOT UPLOADED
+RECORDING DATE:            PENDING
+VIDEO STATUS:              VIDEO STATUS: NOT RECORDED
+
+================================================================================
+PROJECT DEVELOPER AND OWNERSHIP
+================================================================================
+Developed By: Sourabh Godiyal
+
+OsdagBridge is an individual software project developed and maintained by Sourabh Godiyal. The project-specific implementation, customization, testing,
+documentation, and integration covered by this project are attributed to Sourabh
+Godiyal.
+
+A complete, production-ready recording guide and presentation script has been
+prepared by Sourabh Godiyal in:
+    demonstration/Demonstration_Steps.md
+================================================================================

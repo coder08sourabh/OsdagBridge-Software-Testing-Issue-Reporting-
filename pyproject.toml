@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osdagbridge"
+version = "1.0.0"
+description = "OsdagBridge - Shared core for analysis and design of steel bridges (CLI, Desktop, Web)"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+# Project Developer and Ownership (Individual Project Submission): Sourabh Godiyal
+# Upstream Open-Source Framework: Osdag (contact-osdag@fossee.in)
+authors = [
+  { name = "Sourabh Godiyal", email = "sourabhgodiyal@gmail.com" }
+]
+
+maintainers = [
+  { name = "Sourabh Godiyal", email = "sourabhgodiyal@gmail.com" }
+]
+
+requires-python = ">=3.11,<3.13"
+
+keywords = [
+  "bridge",
+  "steel",
+  "structural engineering",
+  "analysis",
+  "IRC",
+  "IS 800",
+  "Osdag"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "Topic :: Scientific/Engineering",
+]
+
+# Runtime dependencies
+
+dependencies = [
+  "scipy>=1.10.1",
+  "fiona",
+  "shapely",
+  "pydantic>=2.0",
+  "matplotlib>=3.5",
+  "openseespy>=3.2.2.6",
+  "opsvis>=1.0",
+  "xarray",
+  "reportlab>=4.0.0",
+  "pypdf>=4.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=6.2.2",
+]
+
+dev = [
+  "pytest>=6.2.2",
+]
+
+# Package data
+[tool.setuptools.package-data]
+osdagbridge = [
+  "core/data/**/*",
+  "core/reports/templates/**/*",
+  "desktop/resources/**/*",
+]
+ospgrillage = [
+  "mat_lib.json",
+]
+
+# setuptools config
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Entry points
+[project.scripts]
+osdagbridge-cli = "osdagbridge.cli.__main__:main"
+osdagbridge = "osdagbridge.desktop.__main__:main"
